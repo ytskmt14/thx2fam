@@ -4,5 +4,5 @@ from . import views
 
 app_name = 'arapp'
 urlpatterns = [
-  path('', views.hello, name='hello'),
+  path('', views.top, name='top'),
 ]

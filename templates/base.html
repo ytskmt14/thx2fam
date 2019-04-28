@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% block page_title %}{% endblock %}</title>
+  <title>{% block page_title %}{% endblock %} thx2fam</title>
 
   {# --- css --- #}
   <link rel="stylesheet" href="{% static 'css/semantic.min.css' %}">
@@ -17,6 +17,11 @@
   {% block extra_css %}{% endblock %}
 </head>
 <body>
+  <div class="ui stackable menu">
+    <div class="item">
+      <a href="{% url 'arapp:top' %}">THX2FAM</a>
+    </div>
+  </div>
   <div class="ui container">
     {% block content %}{% endblock %}
   </div>
